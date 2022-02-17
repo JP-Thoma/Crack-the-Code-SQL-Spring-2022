@@ -1,0 +1,29 @@
+SELECT host_name
+FROM Madrid_Airbnb_V3;
+
+SELECT *
+FROM Madrid_Airbnb_V3;
+
+SELECT * 
+FROM Madrid_Airbnb_V3
+WHERE neighbourhood_group='Latina' OR price>=25;
+
+select * 
+from Madrid_Airbnb_V3
+WHERE price>=25 or minimum_nights>=10 and minimum_nights<=15
+
+select * 
+from Madrid_Airbnb_V3
+WHERE (price>=25 or minimum_nights>=10) and minimum_nights<=15
+
+select * 
+from Madrid_Airbnb_V3
+WHERE price>=25 or (minimum_nights>=10 and minimum_nights<=15)
+
+select * 
+from Madrid_Airbnb_V3
+WHERE neighbourhood_group='Chamberi' OR neighbourhood_group='Arganzuela' or neighbourhood_group='Centro';
+
+select * 
+from Madrid_Airbnb_V3
+WHERE minimum_nights in (2,7,10)
